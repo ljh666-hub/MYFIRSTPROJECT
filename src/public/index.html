@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <style>
+        /* 用 CDN 字体替换本地错误路径的字体 */
+        @font-face {
+            font-family: 'element-icons';
+            src: url('https://cdn.bootcdn.net/ajax/libs/element-ui/2.15.14/theme-chalk/fonts/element-icons.woff') format('woff'),
+            url('https://cdn.bootcdn.net/ajax/libs/element-ui/2.15.14/theme-chalk/fonts/element-icons.ttf') format('truetype');
+        }
+    </style>
+</head>
+<body>
+<!-- 这个就是挂载Vue实例的根元素 -->
+<div id="app"></div>
+<!-- built files will be auto injected -->
+</body>
+</html>
